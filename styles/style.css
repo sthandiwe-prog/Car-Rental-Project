@@ -1,0 +1,176 @@
+:root {
+  --main-font: "Poppins", sans-serif;
+  --primary-color: black;
+  --tertiary-color: white;
+  --main-color: rgb(13, 110, 253);
+  --radius: 5px;
+  --main-font-weight: 900;
+}
+
+body {
+  font-family: var(--main-font);
+  font-weight: var(--main-font-weight);
+}
+header .navigation {
+  padding: 30px 5px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: var(--main-font-weight);
+}
+nav ul li {
+  list-style: none;
+  display: inline;
+  margin: 0 10px;
+}
+.main-content span {
+  color: var(--main-color);
+}
+.main-content {
+  padding: 130px 0 0 100px;
+}
+.main-content h5,
+h1 {
+  font-weight: var(--main-font-weight);
+}
+
+.main-image {
+  width: 900px;
+  height: 500px;
+  padding: 20px 50px 0 0;
+}
+
+.icon-car {
+  color: var(--main-color);
+}
+.web-icon {
+  font-size: 25px;
+  position: relative;
+  top: -10px;
+}
+
+.sign-in-button {
+  color: var(--main-color);
+  background: var(--tertiary-color);
+  border-radius: var(--radius);
+  border: 1px solid var(--tertiary-color);
+}
+.log-in-button {
+  background: var(--main-color);
+  color: var(--tertiary-color);
+  border-radius: var(--radius);
+  border: 1px solid var(--main-color);
+}
+
+.learn-more-button {
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+}
+
+.icon {
+  color: var(--main-color);
+}
+
+.sub-heading {
+  margin: 160px 0;
+  font-weight: var(--main-color);
+}
+.middle-icons {
+  font-size: 50px;
+  color: var(--main-color);
+  margin-bottom: 50px;
+}
+
+.footer-icons {
+  font-size: 50px;
+  color: var(--main-color);
+}
+
+.rent {
+  color: var(--tertiary-color);
+  padding: 10px 0;
+  background: var(--main-color);
+}
+
+.model {
+  padding: 15px 0;
+}
+
+.model:hover {
+  color: var(--tertiary-color);
+  background: var(--main-color);
+  cursor: pointer;
+}
+
+.rental-cars {
+  margin: 0 100px;
+}
+
+.sub-content {
+  margin: 100px 0 0 0;
+  padding: 30px 0;
+  color: var(--tertiary-color);
+  background: rgb(32, 32, 124);
+}
+.sub-content span {
+  color: var(--main-color);
+}
+.car-collection {
+  margin: 0 auto;
+  display: block;
+  width: 900px;
+  height: auto;
+}
+.pricing-content {
+  padding: 0 0 100px 100px;
+}
+.content-wrapper {
+  padding: 0 100px 0px 0;
+}
+
+.review-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.card-inner-content {
+  display: flex;
+  justify-content: space-between;
+}
+.quote {
+  font-size: 50px;
+  color: var(--main-color);
+}
+.card {
+  border: none;
+}
+
+.testimonials {
+  margin-bottom: 150px;
+}
+
+.accordion-button {
+  padding: 35px;
+  font-size: 20px;
+  font-weight: var(--main-font);
+}
+
+.accordion-button:hover {
+  color: var(--tertiary-color);
+  background: var(--main-color);
+}
+
+.contact .card-text {
+  border: 1px solid var(--primary-color);
+  border-radius: var(--radius);
+}
+.card-text .qr-code {
+  width: 340px;
+}
+
+.contact {
+  margin: 200px 0 200px 0;
+}
