@@ -11,100 +11,97 @@ body {
   font-family: var(--main-font);
   font-weight: var(--main-font-weight);
 }
-header .navigation {
-  padding: 30px 5px;
-}
 
-nav a {
+header nav a {
   text-decoration: none;
   color: var(--primary-color);
   font-weight: var(--main-font-weight);
 }
-nav ul li {
+header nav ul li {
   list-style: none;
   display: inline;
   margin: 0 10px;
 }
-.main-content span {
-  color: var(--main-color);
-}
-.main-content {
-  padding: 130px 0 0 100px;
-}
-.main-content h5,
-h1 {
-  font-weight: var(--main-font-weight);
+
+header .navigation {
+  padding: 30px 5px;
 }
 
-.main-image {
-  width: 900px;
-  height: 500px;
-  padding: 20px 50px 0 0;
-}
-
-.icon-car {
+header .nav-icon-car {
   color: var(--main-color);
 }
-.web-icon {
+header .web-icon {
   font-size: 25px;
   position: relative;
   top: -10px;
 }
 
-.sign-in-button {
+header .sign-in-button {
   color: var(--main-color);
   background: var(--tertiary-color);
   border-radius: var(--radius);
   border: 1px solid var(--tertiary-color);
 }
-.log-in-button {
+header .log-in-button {
   background: var(--main-color);
   color: var(--tertiary-color);
   border-radius: var(--radius);
   border: 1px solid var(--main-color);
 }
+.sub-heading {
+  margin: 150px 0;
+  font-weight: var(--main-color);
+}
 
-.learn-more-button {
+.landing-content .main-content span {
+  color: var(--main-color);
+}
+.landing-content .main-content {
+  padding: 130px 0 0 100px;
+}
+.landing-content .main-content h5,
+h1 {
+  font-weight: var(--main-font-weight);
+}
+
+.landing-content .main-image {
+  width: 900px;
+  height: 500px;
+  padding: 20px 50px 0 0;
+}
+
+.landing-content .learn-more-button {
   border: 1px solid var(--main-color);
   color: var(--main-color);
 }
 
-.icon {
+.car-booking-section .car-booking-icon {
   color: var(--main-color);
 }
 
-.sub-heading {
-  margin: 160px 0;
-  font-weight: var(--main-color);
-}
-.middle-icons {
+.car-rental-process .middle-icons {
   font-size: 50px;
   color: var(--main-color);
   margin-bottom: 50px;
 }
 
-.footer-icons {
-  font-size: 50px;
-  color: var(--main-color);
-}
-
-.rent {
+.car-rental-offers .rent-amount {
   color: var(--tertiary-color);
   padding: 10px 0;
   background: var(--main-color);
 }
 
-.model {
+.car-rental-offers .model {
   padding: 15px 0;
 }
 
-.model:hover {
+.car-rental-offers .model:hover {
   color: var(--tertiary-color);
   background: var(--main-color);
   cursor: pointer;
 }
 
-.rental-cars {
+.car-rental-offers .rental-cars {
   margin: 0 100px;
 }
 
@@ -117,60 +114,77 @@ h1 {
 .sub-content span {
   color: var(--main-color);
 }
-.car-collection {
+
+.car-deals-content .car-deals-icons {
+  font-size: 50px;
+  color: var(--main-color);
+}
+
+.car-deals-content .car-collection {
   margin: 0 auto;
   display: block;
   width: 900px;
   height: auto;
 }
-.pricing-content {
+.car-deals-content .pricing-content {
   padding: 0 0 100px 100px;
 }
-.content-wrapper {
+.car-deals-content .content-wrapper {
   padding: 0 100px 0px 0;
 }
 
-.review-pic {
+.testimonials .review-pic {
   width: 80px;
   height: 80px;
   border-radius: 50%;
 }
 
-.card-inner-content {
+.testimonials .card-inner-content {
   display: flex;
   justify-content: space-between;
 }
-.quote {
+.testimonials .quote-icon {
   font-size: 50px;
   color: var(--main-color);
 }
-.card {
+.testimonials .card {
   border: none;
 }
 
-.testimonials {
-  margin-bottom: 150px;
-}
-
-.accordion-button {
+.frequently-asked-questions .accordion-button {
   padding: 35px;
   font-size: 20px;
   font-weight: var(--main-font);
 }
 
-.accordion-button:hover {
+.frequently-asked-questions .accordion-button:hover {
   color: var(--tertiary-color);
   background: var(--main-color);
 }
 
-.contact .card-text {
+.contact-details .app-download-icon {
+  width: 250px;
+}
+.contact-details .app-download {
+  font-size: 40px;
+}
+
+.contact-details .whatsapp-get-in-touch {
+  width: 250px;
+}
+
+.contact-details .whatsapp-qr {
+  font-size: 19px;
+  width: 250px;
+  margin: 25px;
   border: 1px solid var(--primary-color);
   border-radius: var(--radius);
 }
-.card-text .qr-code {
-  width: 340px;
+
+.contact-details {
+  margin: 200px 0 400px 100px;
 }
 
-.contact {
-  margin: 200px 0 200px 0;
+.footer ul li {
+  list-style-type: none;
 }

@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Playfair+Display:wght@700&family=Poppins&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Playfair+Display:wght@700&family=Poppins:wght@700&display=swap"
       rel="stylesheet"
     />
     <script
@@ -27,7 +27,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <title>Car Rental</title>
+    <title>Car Rental Company</title>
   </head>
   <body>
     <div class="container">
@@ -36,7 +36,7 @@
           <div class="container navigation d-flex justify-content-between">
             <a href="#"
               ><span class="web-icon"
-                ><i class="fa-solid fa-car icon-car"></i> Car Rental</span
+                ><i class="fa-solid fa-car nav-icon-car"></i> Car Rental</span
               ></a
             >
 
@@ -55,12 +55,12 @@
         </nav>
       </header>
 
-      <div class="content">
+      <section class="landing-content">
         <div class="row">
           <div class="col-md-6 main-content">
             <h5>Prepare for your trip now</h5>
             <h1>Save <span>big</span> with our car rental</h1>
-            <p class="opacity-50">
+            <p>
               Rent the car you like, we have options of cars for you to choose
               from.
             </p>
@@ -76,495 +76,498 @@
             <img class="img-fluid main-image" src="car-6.jpg" alt="car" />
           </div>
         </div>
-      </div>
-      <div class="row ms-5">
-        <div class="col-md-12 mb-3">Book a car</div>
-        <div class="col-md-4 mb-4">
-          <label for="car-type"
-            ><i class="fa-sharp fa-solid fa-car icon"></i> Select Car
-            Type:</label
-          >
-          <br />
-          <select name="car" id="car-type">
-            <option>Select car type</option>
-            <option value="bmw">BMW</option>
-            <option value="audi">Audi</option>
-            <option value="ford">Ford</option>
-            <option value="toyota-fortuner">Toyota Fortuner</option>
-            <option value="volkswagen-polo">Volkswagen Polo</option>
-          </select>
-        </div>
-        <div class="col-md-4 mb-4">
-          <label for="pick-up-place">
-            <i class="fa-sharp fa-solid fa-location-dot icon"></i>
-            Pick-up:</label
-          >
-          <br />
-
-          <select name="location" id="pick-up-place">
-            <option>Select pick-up place</option>
-            <option value="durban">Durban</option>
-            <option value="pietermaritzburg">Pietermaritzburg</option>
-            <option value="middelburg">Middelburg</option>
-            <option value="richards-bay">Richards Bay</option>
-            <option value="klerksdorp">Klerksdorp</option>
-          </select>
-        </div>
-        <div class="col-md-4 mb-4">
-          <label for="drop-of">
-            <i class="fa-sharp fa-solid fa-location-dot icon"></i>
-            Drop-of:</label
-          ><br />
-
-          <select name="location" id="drop-of">
-            <option>Select drop-of place</option>
-            <option value="durban">Durban</option>
-            <option value="pietermaritzburg">Pietermaritzburg</option>
-            <option value="middelburg">Middelburg</option>
-            <option value="richards-bay">Richards Bay</option>
-            <option value="klerksdorp">Klerksdorp</option>
-          </select>
-        </div>
-        <div class="col-md-4">
-          <label for="pick-up-date">
-            <i class="fa-solid fa-calendar-days icon"></i> Pick-up-date:</label
-          ><br />
-          <input
-            type="date"
-            id="pick-up-date"
-            placeholder="Enter a car type..."
-          />
-        </div>
-        <div class="col-md-4">
-          <label for="drop-of-date"
-            ><i class="fa-solid fa-calendar-days icon"></i> Drop-of-date:</label
-          ><br />
-          <input
-            type="date"
-            id="drop-of-date"
-            placeholder="Enter a car type..."
-          />
-        </div>
-        <div class="col-md-4">
-          <button class="btn btn-primary w-100 mt-3">SEARCH</button>
-        </div>
-      </div>
-
-      <div class="sub-heading text-center">
-        <p>Plan your trip now</p>
-        <h2>Quick & easy car rental!</h2>
-      </div>
-
-      <div class="row mb-5">
-        <div class="col-md-4 text-center">
-          <i class="fa-sharp fa-solid fa-car middle-icons"></i>
-          <h4>Select Car</h4>
-          <p>
-            We offer a big range of vehicles for all your driving needs. We have
-            the perfect car to meet your needs
-          </p>
-        </div>
-        <div class="col-md-4 text-center">
-          <i class="fa-solid fa-person middle-icons"></i>
-          <h4>Contact Operator</h4>
-          <p>
-            Our knowledgable and friendly operators are always ready to help
-            with any question or concerns
-          </p>
-        </div>
-        <div class="col-md-4 text-center">
-          <i class="fa-solid fa-car-side middle-icons"></i>
-          <h4>Let's Drive</h4>
-          <p>
-            Whether you're hitting the open road. we've got you covered with our
-            wide range of cars
-          </p>
-        </div>
-      </div>
-      <div class="sub-heading text-center">
-        <h3>Vehicle Models</h3>
-        <h2>Our Rental Fleet</h2>
-        <p>
-          Choose from a variety of our amazing vehicles to rent for your next
-          adventure or business trip
-        </p>
-      </div>
-
-      <div class="row mb-5">
-        <div class="col-md-4 text-center">
-          <div class="col-md border model" id="bmw">BMW</div>
-          <div class="col-md border model" id="toyota-fortuner">
-            Toyota Fortuner
+      </section>
+      <section class="car-booking-section">
+        <div class="row ms-5">
+          <div class="col-md-12 mb-3">Book a car</div>
+          <div class="col-md-4 mb-4">
+            <label for="car-type"
+              ><i class="fa-sharp fa-solid fa-car car-booking-icon"></i> Select
+              Car Type:</label
+            >
+            <br />
+            <select name="car" id="car-type">
+              <option>Select car type</option>
+              <option value="bmw">BMW</option>
+              <option value="audi">Audi</option>
+              <option value="ford">Ford</option>
+              <option value="toyota-fortuner">Toyota Fortuner</option>
+              <option value="volkswagen-polo">Volkswagen Polo</option>
+            </select>
           </div>
-          <div class="col-md border model" id="ford">Ford</div>
-          <div class="col-md border model" id="hyndai">Hyndai</div>
-          <div class="col-md border model" id="volkswagen-polo">
-            Volkswagen-polo
+          <div class="col-md-4 mb-4">
+            <label for="pick-up-place">
+              <i class="fa-sharp fa-solid fa-location-dot car-booking-icon"></i>
+              Pick-up:</label
+            >
+            <br />
+
+            <select name="location" id="pick-up-place">
+              <option>Select pick-up place</option>
+              <option value="durban">Durban</option>
+              <option value="pietermaritzburg">Pietermaritzburg</option>
+              <option value="middelburg">Middelburg</option>
+              <option value="richards-bay">Richards Bay</option>
+              <option value="klerksdorp">Klerksdorp</option>
+            </select>
+          </div>
+          <div class="col-md-4 mb-4">
+            <label for="drop-of">
+              <i class="fa-sharp fa-solid fa-location-dot car-booking-icon"></i>
+              Drop-of:</label
+            ><br />
+
+            <select name="location" id="drop-of">
+              <option>Select drop-of place</option>
+              <option value="durban">Durban</option>
+              <option value="pietermaritzburg">Pietermaritzburg</option>
+              <option value="middelburg">Middelburg</option>
+              <option value="richards-bay">Richards Bay</option>
+              <option value="klerksdorp">Klerksdorp</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="pick-up-date">
+              <i class="fa-solid fa-calendar-days car-booking-icon"></i>
+              Pick-up-date:</label
+            ><br />
+            <input type="date" id="pick-up-date" />
+          </div>
+          <div class="col-md-4">
+            <label for="drop-of-date"
+              ><i class="fa-solid fa-calendar-days car-booking-icon"></i>
+              Drop-of-date:</label
+            ><br />
+            <input type="date" id="drop-of-date" />
+          </div>
+          <div class="col-md-4">
+            <button class="btn btn-primary w-100 mt-3">SEARCH</button>
           </div>
         </div>
-        <div class="col-md-4">
-          <img class="img-fluid" id="image" src="car-1.jpg" alt="car" />
+      </section>
+      <section class="car-rental-process">
+        <div class="row mb-5">
+          <div class="sub-heading text-center">
+            <p>Plan your trip now</p>
+            <h2>Quick & easy car rental!</h2>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <i class="fa-sharp fa-solid fa-car middle-icons"></i>
+            <h4>Select Car</h4>
+            <p>
+              We offer a big range of vehicles for all your driving needs. We
+              have the perfect car to meet your needs
+            </p>
+          </div>
+          <div class="col-md-4 text-center">
+            <i class="fa-solid fa-person middle-icons"></i>
+            <h4>Contact Operator</h4>
+            <p>
+              Our knowledgable and friendly operators are always ready to help
+              with any question or concerns
+            </p>
+          </div>
+          <div class="col-md-4 text-center">
+            <i class="fa-solid fa-car-side middle-icons"></i>
+            <h4>Let's Drive</h4>
+            <p>
+              Whether you're hitting the open road. we've got you covered with
+              our wide range of cars
+            </p>
+          </div>
         </div>
-        <div class="col-md-4 text-center">
-          <div class="row">
-            <div class="col-md-12 border rent" id="amount">
-              R561 /rent per day
+      </section>
+      <section class="car-rental-offers">
+        <div class="row mb-5">
+          <div class="sub-heading text-center">
+            <h3>Vehicle Models</h3>
+            <h2>Our Rental Fleet</h2>
+            <p>
+              Choose from a variety of our amazing vehicles to rent for your
+              next adventure or business trip
+            </p>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="col-md border model" id="bmw">BMW</div>
+            <div class="col-md border model" id="toyota-fortuner">
+              Toyota Fortuner
             </div>
-            <div class="col-md-6 border">Model</div>
-            <div class="col-md-6 border" id="carType">BMW</div>
-            <div class="col-md-6 border">Year</div>
-            <div class="col-md-6 border" id="year">2006</div>
-            <div class="col-md-6 border">Door</div>
-            <div class="col-md-6 border">4</div>
-            <div class="col-md-6 border">AC</div>
-            <div class="col-md-6 border">Yes</div>
-            <div class="col-md-6 border">Transmission</div>
-            <div class="col-md-6 border" id="transmission">Automatic</div>
-            <div class="col-md-6 border">Fuel</div>
-            <div class="col-md-6 border" id="fuel">Premium Gasoline</div>
-            <button class="btn btn-primary mt-3">RESERVE NOW</button>
+            <div class="col-md border model" id="ford">Ford</div>
+            <div class="col-md border model" id="hyndai">Hyndai</div>
+            <div class="col-md border model" id="volkswagen-polo">
+              Volkswagen-polo
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img class="img-fluid" id="image" src="car-1.jpg" alt="car" />
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="row">
+              <div class="col-md-12 border rent-amount" id="amount">
+                R561 /rent per day
+              </div>
+              <div class="col-md-6 border">Model</div>
+              <div class="col-md-6 border" id="carType">BMW</div>
+              <div class="col-md-6 border">Year</div>
+              <div class="col-md-6 border" id="year">2006</div>
+              <div class="col-md-6 border">Door</div>
+              <div class="col-md-6 border">4</div>
+              <div class="col-md-6 border">AC</div>
+              <div class="col-md-6 border">Yes</div>
+              <div class="col-md-6 border">Transmission</div>
+              <div class="col-md-6 border" id="transmission">Automatic</div>
+              <div class="col-md-6 border">Fuel</div>
+              <div class="col-md-6 border" id="fuel">Premium Gasoline</div>
+              <button class="btn btn-primary mt-3">RESERVE NOW</button>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
     <div class="sub-content text-center">
       <h2>Save big with our cheap car rental!</h2>
       <p>Top Airports.Local Suppliers. <span>24/7</span> Support.</p>
     </div>
     <div class="container">
-      <div>
-        <img
-          src="car-collection.jpg"
-          class="img-fluid car-collection"
-          alt="collection of cars"
-        />
-      </div>
-      <div class="row">
-        <div class="col-md-6 content-wrapper">
-          <h6>Why Choose us</h6>
-          <h2>Best valued deals you will ever find</h2>
-          <p>
-            Discover the deals you'll find with our unbeatable offers. We are
-            dedicated to providing you with the best value for your money so you
-            can enjoy 100-quality services end products without breaking the
-            bank. Our deals are designed to give you the ultimate renting
-            experience so dont miss on your chance to save big
-          </p>
-          <button class="btn btn-primary mt-3">Find more details</button>
-        </div>
-        <div class="col-md-6 pricing-content">
-          <div class="col-md">
-            <i class="fa-solid fa-car-side footer-icons mb-4"></i>
-            <h4>Cross Country Drive</h4>
-            <p>
-              Take your driving experience the next level with our top-notch
-              vehicles for your cross-country adventures
-            </p>
-          </div>
-
-          <div class="col-md">
-            <i class="fa-solid fa-sack-dollar footer-icons mb-4"></i>
-            <h4>All Inclusive Pricing</h4>
-            <p>
-              Get everything you need in one convenient, transparent price with
-              our all-inclusive pricing policy
-            </p>
-          </div>
-
-          <div class="col-md">
-            <i class="fa-sharp fa-solid fa-coins footer-icons mb-4"></i>
-            <h4>No Hidden Charges</h4>
-            <p>
-              Enjoy peace of mind with our no hidden charges policy. We believe
-              in transparent and honest pricing
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonials mt-5 text-center">
-        <h6>Reviewed by People</h6>
-        <h2>Client's Testimonials</h2>
-        <p>
-          Discover the positive impact we've made on our clients by reading
-          through their testimonials. Our clients have experienced our service
-          and they're eager to share their positive experience with you
-        </p>
-      </div>
-
-      <div class="row mb-5">
-        <div class="col-md-4">
-          <div class="card shadow" style="width: 23rem">
-            <div class="card-body">
-              <p class="card-text mb-5 mt-3">
-                "We rented a car from this website and had an amazing
-                experience! The booking was easy and the rental rates were very
-                affordable"
-              </p>
-              <div class="card-inner-content">
-                <img
-                  class="review-pic img-fluid"
-                  src="ogo.jpg"
-                  alt="ojo-selfie"
-                />
-
-                <h5 class="mt-3">
-                  Ogo Peterson <br />
-                  Durban
-                </h5>
-
-                <i class="fa-solid fa-quote-right quote mt-3"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card shadow" style="width: 23rem">
-            <div class="card-body">
-              <p class="card-text mb-5 mt-3">
-                "The car was in great condition and made our trip even better.
-                Highly recommend this car rental website for anyone who would
-                want to rent a car"
-              </p>
-              <div class="card-inner-content">
-                <img
-                  class="review-pic img-fluid"
-                  src="kelly.jpg"
-                  alt="ojo-selfie"
-                />
-
-                <h5 class="mt-3">
-                  Kell Johnson <br />
-                  Middelburg
-                </h5>
-
-                <i class="fa-solid fa-quote-right quote mt-3"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card shadow" style="width: 23rem">
-            <div class="card-body">
-              <p class="card-text mb-5 mt-3">
-                "I love everything about this car rental, the prices are fair
-                enough, their cars are in great condition and people from the
-                team are very friendly"
-              </p>
-              <div class="card-inner-content">
-                <img
-                  class="review-pic img-fluid"
-                  src="shvets.jpg"
-                  alt="ojo-selfie"
-                />
-
-                <h5 class="mt-3">
-                  Ogo Peterson <br />
-                  Durban
-                </h5>
-
-                <i class="fa-solid fa-quote-right quote mt-3"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="sub-heading text-center">
-          <h3>FAQ</h3>
-          <h2>Frequently Asked Questions</h2>
-          <p>
-            Frequently Asked Questions About the Car Rental Booking Process on
-            Our Website, Answers to Common Concerns and Inquiries.
-          </p>
-        </div>
-
-        <div class="col-md-6">
-          <img src="bmw-car.jpg" class="img-fluid" alt="bmw-car" />
-        </div>
-        <div class="col-md-6 text-center">
-          <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingOne">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseOne"
-                  aria-expanded="false"
-                  aria-controls="flush-collapseOne"
-                >
-                  1. What is special about comparing rental car deals?
-                </button>
-              </h2>
-              <div
-                id="flush-collapseOne"
-                class="accordion-collapse collapse"
-                aria-labelledby="flush-headingOne"
-                data-bs-parent="#accordionFlushExample"
-              >
-                <div class="accordion-body">
-                  Comparing rental car deals is important as it helps find the
-                  best deal that fits your budget and requirements, ensuring you
-                  get the most value for money. By comparing various options,
-                  you can find deals that offer lower prices, additional
-                  services, or better car models. You can find car rental deals
-                  by researching online and comparing prices from different
-                  rental companies
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingTwo">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="flush-collapseTwo"
-                >
-                  2. How do I find the car rental deals
-                </button>
-              </h2>
-              <div
-                id="flush-collapseTwo"
-                class="accordion-collapse collapse"
-                aria-labelledby="flush-headingTwo"
-                data-bs-parent="#accordionFlushExample"
-              >
-                <div class="accordion-body">
-                  You can find car rental deals by researching online and
-                  comparing prices from different rental companies. Websites
-                  such as Expedia, Kayak and Travelocity allow you to compare
-                  prices and view available rental options. It is also
-                  recommended to sign up for email newsletters and follow rental
-                  car companies on social media to be informed of any special
-                  deals or parameters.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingThree">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseThree"
-                  aria-expanded="false"
-                  aria-controls="flush-collapseThree"
-                >
-                  3. How do I find such low rental car prices
-                </button>
-              </h2>
-              <div
-                id="flush-collapseThree"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionFlushExample"
-              >
-                <div class="accordion-body">
-                  Book in advance. Booking your rental car ahead of time can
-                  often result in lower prices. Compare prices from multiple
-                  companies. Use websites for car rentals such as Expedia, Kayak
-                  and Travelocity to compare prices from multiple rental car
-                  companies. Look for discount codes and coopon. Search for
-                  dicount codes and coopons that you can use to lower the rental
-                  price.Renting from an off-airport location can sometimes
-                  result in lower prices.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row contact">
-        <div class="col-md-4 text-center download">
-          <h2>Download our app to get most out of it</h2>
-          <p>Get an amazing opportunities to use this state of the art app</p>
-
-          <h6>DON'T HESITATE, DOWNLOAD IT TODAY</h6>
-          <img
-            src="download-icon.jpg"
-            class="img-fluid download-icon"
-            alt="download sources"
-          />
-        </div>
-        <div class="col-md-4 text-center get-in-touch">
-          <img
-            src="whatsapp.jpg"
-            class="card-img-top img-fluid"
-            alt="whatsapp inqury"
-          />
-          <div class="card-body">
-            <h5 class="card-title">
-              We are also available on WhatsApp 24/7!!!
-            </h5>
-          </div>
-        </div>
-        <div class="col-md-4 text-center">
-          <div class="card-text">
-            <p class="mt-3">
-              Make use of our whatsapp service, quick scan to contact us👇
-            </p>
+      <section class="car-deals-content">
+        <div class="row">
+          <div>
             <img
-              src="scanner.jpg"
-              class="img-fluid qr-code"
-              alt="qr code scanner"
+              src="car-collection.jpg"
+              class="img-fluid car-collection"
+              alt="collection of cars"
             />
+          </div>
+
+          <div class="col-md-6 content-wrapper">
+            <h6>Why Choose us</h6>
+            <h2>Best valued deals you will ever find</h2>
+            <p>
+              Discover the deals you'll find with our unbeatable offers. We are
+              dedicated to providing you with the best value for your money so
+              you can enjoy 100-quality services end products without breaking
+              the bank. Our deals are designed to give you the ultimate renting
+              experience so dont miss on your chance to save big
+            </p>
+            <button class="btn btn-primary mt-3">Find more details</button>
+          </div>
+          <div class="col-md-6 pricing-content">
+            <div class="col-md">
+              <i class="fa-solid fa-car-side car-deals-icons mb-4"></i>
+              <h4>Cross Country Drive</h4>
+              <p>
+                Take your driving experience the next level with our top-notch
+                vehicles for your cross-country adventures
+              </p>
+            </div>
+
+            <div class="col-md">
+              <i class="fa-solid fa-sack-dollar car-deals-icons mb-4"></i>
+              <h4>All Inclusive Pricing</h4>
+              <p>
+                Get everything you need in one convenient, transparent price
+                with our all-inclusive pricing policy
+              </p>
+            </div>
+
+            <div class="col-md">
+              <i class="fa-sharp fa-solid fa-coins car-deals-icons mb-4"></i>
+              <h4>No Hidden Charges</h4>
+              <p>
+                Enjoy peace of mind with our no hidden charges policy. We
+                believe in transparent and honest pricing
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials">
+        <div class="row mb-5">
+          <div class="sub-heading mt-5 text-center">
+            <h6>Reviewed by People</h6>
+            <h2>Client's Testimonials</h2>
+            <p>
+              Discover the positive impact we've made on our clients by reading
+              through their testimonials. Our clients have experienced our
+              service and they're eager to share their positive experience with
+              you
+            </p>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow" style="width: 23rem">
+              <div class="card-body">
+                <p class="card-text mb-5 mt-3">
+                  "We rented a car from this website and had an amazing
+                  experience! The booking was easy and the rental rates were
+                  very affordable"
+                </p>
+                <div class="card-inner-content">
+                  <img
+                    class="review-pic img-fluid"
+                    src="ogo.jpg"
+                    alt="ojo-selfie"
+                  />
+
+                  <h5 class="mt-3">
+                    Ogo Peterson <br />
+                    Durban
+                  </h5>
+
+                  <i class="fa-solid fa-quote-right quote-icon mt-3"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow" style="width: 23rem">
+              <div class="card-body">
+                <p class="card-text mb-5 mt-3">
+                  "The car was in great condition and made our trip even better.
+                  Highly recommend this car rental website for anyone who would
+                  want to rent a car"
+                </p>
+                <div class="card-inner-content">
+                  <img
+                    class="review-pic img-fluid"
+                    src="kelly.jpg"
+                    alt="ojo-selfie"
+                  />
+
+                  <h5 class="mt-3">
+                    Kell Johnson <br />
+                    Middelburg
+                  </h5>
+
+                  <i class="fa-solid fa-quote-right quote-icon mt-3"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow" style="width: 23rem">
+              <div class="card-body">
+                <p class="card-text mb-5 mt-3">
+                  "I love everything about this car rental, the prices are fair
+                  enough, their cars are in great condition and people from the
+                  team are very friendly"
+                </p>
+                <div class="card-inner-content">
+                  <img
+                    class="review-pic img-fluid"
+                    src="shvets.jpg"
+                    alt="ojo-selfie"
+                  />
+
+                  <h5 class="mt-3">
+                    Ogo Peterson <br />
+                    Durban
+                  </h5>
+
+                  <i class="fa-solid fa-quote-right quote-icon mt-3"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="frequently-asked-questions">
+        <div class="row">
+          <div class="sub-heading text-center">
+            <h3>FAQ</h3>
+            <h2>Frequently Asked Questions</h2>
+            <p>
+              Frequently Asked Questions About the Car Rental Booking Process on
+              Our Website, Answers to Common Concerns and Inquiries.
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <img src="bmw-car.jpg" class="img-fluid" alt="bmw car" />
+          </div>
+          <div class="col-md-6 text-center">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    1. What is special about comparing rental car deals?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Comparing rental car deals is important as it helps find the
+                    best deal that fits your budget and requirements, ensuring
+                    you get the most value for money. By comparing various
+                    options, you can find deals that offer lower prices,
+                    additional services, or better car models. You can find car
+                    rental deals by researching online and comparing prices from
+                    different rental companies
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    2. How do I find the car rental deals
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    You can find car rental deals by researching online and
+                    comparing prices from different rental companies. Websites
+                    such as Expedia, Kayak and Travelocity allow you to compare
+                    prices and view available rental options. It is also
+                    recommended to sign up for email newsletters and follow
+                    rental car companies on social media to be informed of any
+                    special deals or parameters.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    3. How do I find such low rental car prices
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Book in advance. Booking your rental car ahead of time can
+                    often result in lower prices. Compare prices from multiple
+                    companies. Use websites for car rentals such as Expedia,
+                    Kayak and Travelocity to compare prices from multiple rental
+                    car companies. Look for discount codes and coopon. Search
+                    for dicount codes and coopons that you can use to lower the
+                    rental price.Renting from an off-airport location can
+                    sometimes result in lower prices.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="contact-details">
+        <div class="row">
+          <div class="col-md-4">
+            <h2 class="app-download">Download our app to get most out of it</h2>
+            <p>Get an amazing opportunities to use this state of the art app</p>
+            <h6>DON'T HESITATE, DOWNLOAD IT TODAY</h6>
+            <img
+              src="download-icon.jpg"
+              class="img-fluid app-download-icon"
+              alt="download sources"
+            />
+          </div>
+          <div class="col-md-4 text-center whatsapp-get-in-touch">
+            <img
+              src="whatsapp.jpg"
+              class="img-fluid whatsapp-icon"
+              alt="whatsapp inqury"
+            />
+            <h5>We are also available on WhatsApp 24/7!!!</h5>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="whatsapp-qr">
+              <p>
+                Make use of our whatsapp service, quick scan to contact us👇
+              </p>
+              <img
+                src="scanner.jpg"
+                class="img-fluid qr-code"
+                alt="qr code scanner"
+              />
+            </div>
           </div>
         </div>
       </div>
       <hr />
-      <div class="row mb-5">
-        <div class="col-md-3">
-          <h5>CAR Rental</h5>
-          <p>
-            We offer a big range of vehicles for all your ariving needs. We have
-            the perfect car to meet your needs
-          </p>
-          <div>
-            <span><i class="fa-solid fa-phone"></i>(031)-446-7890</span>
-            <br />
-            <span
-              ><i class="fa-sharp fa-solid fa-envelope"></i>
-              carrental@gmail.com</span
-            >
+      <div class="footer">
+        <div class="row">
+          <div class="col-md-3">
+            <h5>CAR Rental</h5>
+            <p>
+              We offer a big range of vehicles for all your ariving needs. We
+              have the perfect car to meet your needs
+            </p>
+            <div>
+              <span><i class="fa-solid fa-phone"></i>(031)-446-7890</span>
+              <br />
+              <span
+                ><i class="fa-sharp fa-solid fa-envelope"></i>
+                carrental@gmail.com</span
+              >
+            </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <h5>COMPANY</h5>
-          <ul>
-            <li>Durban</li>
-            <li>Careers</li>
-            <li>Mobile</li>
-            <li>Blog</li>
-            <li>How we work</li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <h5>WORKING HOURS</h5>
-          <ul>
-            <li>Mon-Fri 9:00am-9:00pm</li>
+          <div class="col-md-3">
+            <ul>
+              <li><h5>COMPANY</h5></li>
+              <li>Durban</li>
+              <li>Careers</li>
+              <li>Mobile</li>
+              <li>Blog</li>
+              <li>How we work</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul>
+              <li><h5>WORKING HOURS</h5></li>
+              <li>Mon-Fri 9:00am-9:00pm</li>
 
-            <li>Sat 9:00am-08:00pm</li>
-            <li>Sun 9:00am-12:00pm</li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <h5>SUBSCRIPTION</h5>
+              <li>Sat 9:00am-08:00pm</li>
+              <li>Sun 9:00am-12:00pm</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>SUBSCRIPTION</h5>
 
-          <form>
-            <label for="subscription"
-              >Subscribe your Email address for latest news and updates
-            </label>
-            <input
-              type="text"
-              id="subscription"
-              placeholder="Enter Email Address"
-            />
+            <form>
+              <label for="subscription"
+                >Subscribe your Email address for latest news and updates
+              </label>
+              <input
+                type="text"
+                id="subscription"
+                placeholder="Enter Email Address"
+              />
 
-            <button class="btn btn-primary w-50 mt-3">Submit</button>
-          </form>
+              <button class="btn btn-primary w-50 mt-3">Submit</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
