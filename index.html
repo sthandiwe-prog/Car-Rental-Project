@@ -34,28 +34,32 @@
       <header>
         <nav>
           <div class="container navigation d-flex justify-content-between">
-            <a href="#"
+            <a href="#home"
               ><span class="web-icon"
                 ><i class="fa-solid fa-car nav-icon-car"></i> Car Rental</span
               ></a
             >
 
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Vehicles</a></li>
-              <li><a href="#">Featured</a></li>
-              <li><a href="#">Reviews</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#vehicle-models">Vehicle Models</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
             <span>
-              <button class="sign-in-button">Sign in</button>
-              <button class="log-in-button">Log in</button>
+              <button class="sign-up-button" id="user-sign-up-button">
+                Sign up
+              </button>
+              <button class="log-in-button" id="user-log-in-button">
+                Log in
+              </button>
             </span>
           </div>
         </nav>
       </header>
 
-      <section class="landing-content">
+      <section class="landing-content" id="home">
         <div class="row">
           <div class="col-md-6 main-content">
             <h5>Prepare for your trip now</h5>
@@ -145,7 +149,7 @@
           </div>
         </div>
       </section>
-      <section class="car-rental-process">
+      <section class="car-rental-process" id="about">
         <div class="row mb-5">
           <div class="sub-heading text-center">
             <p>Plan your trip now</p>
@@ -178,7 +182,7 @@
           </div>
         </div>
       </section>
-      <section class="car-rental-offers">
+      <section class="car-rental-offers" id="vehicle-models">
         <div class="row mb-5">
           <div class="sub-heading text-center">
             <h3>Vehicle Models</h3>
@@ -282,7 +286,7 @@
           </div>
         </div>
       </section>
-      <section class="testimonials">
+      <section class="testimonials" id="testimonials">
         <div class="row mb-5">
           <div class="sub-heading mt-5 text-center">
             <h6>Reviewed by People</h6>
@@ -481,7 +485,7 @@
           </div>
         </div>
       </section>
-      <div class="contact-details">
+      <div class="contact-details" id="contact">
         <div class="row">
           <div class="col-md-4">
             <h2 class="app-download">Download our app to get most out of it</h2>
@@ -571,6 +575,106 @@
         </div>
       </div>
     </div>
+    <section class="popup" id="poped-up-content-log-in">
+      <div class="popup-content">
+        <form>
+          <div class="container">
+            <div class="form-group mb-3">
+              <i
+                class="fa-sharp fa-solid fa-xmark close-icon"
+                id="log-in-closing-icon"
+              ></i>
+
+              <h2 class="text-center mb-3">LOG IN</h2>
+              <label for="inputEmail"><h6>Email address:</h6></label>
+              <input
+                type="email"
+                id="inputEmail"
+                class="form-control"
+                placeholder="Enter Email"
+              />
+              <small class="form-text text-muted"
+                >We'll never share your email with anyone else.</small
+              >
+            </div>
+            <div class="form-group mb-3">
+              <label for="inputPassword"><h6>Password:</h6></label>
+              <input
+                type="password"
+                class="form-control"
+                id="inputPassword"
+                placeholder=" Enter Password"
+              />
+              <small class="form-text text-muted">Forgot password?</small>
+            </div>
+            <div class="form-group">
+              <input type="checkbox" id="checkbox" />
+              <label for="checkbox">Remember me</label>
+              <button
+                type="submit"
+                class="btn btn-primary w-100 mt-2 submit-button"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="popup" id="poped-up-content-sign-up">
+      <div class="popup-content">
+        <form>
+          <div class="container">
+            <div class="form-group">
+              <i
+                class="fa-sharp fa-solid fa-xmark close-icon"
+                id="sign-up-closing-icon"
+              ></i>
+
+              <h2 class="text-center">SIGN UP</h2>
+              <label for="inputEmail"><h6>Email:</h6></label>
+              <input
+                type="email"
+                id="inputEmail"
+                class="form-control"
+                placeholder="Enter Email"
+              />
+              <small class="form-text text-muted"
+                >We'll never share your email with anyone else.</small
+              >
+            </div>
+            <div class="form-group">
+              <label for="inputPassword"><h6>Password:</h6></label>
+              <input
+                type="password"
+                class="form-control"
+                id="inputPassword"
+                placeholder=" Create Password"
+              />
+            </div>
+            <div class="form-group">
+              <label for="inputPassword"><h6>Password:</h6></label>
+              <input
+                type="password"
+                class="form-control"
+                id="inputPassword"
+                placeholder=" Confirm Password"
+              />
+            </div>
+            <div class="form-group">
+              <input type="checkbox" id="checkbox" />
+              <label for="checkbox">Remember me</label>
+              <button
+                type="submit"
+                class="btn btn-primary w-100 mt-2 submit-button"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
     <script src="app.js"></script>
   </body>
 </html>

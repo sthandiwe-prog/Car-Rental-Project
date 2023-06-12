@@ -17,6 +17,11 @@ header nav a {
   color: var(--primary-color);
   font-weight: var(--main-font-weight);
 }
+header nav a:hover {
+  color: var(--main-color);
+  transition: all 150ms ease-in-out;
+}
+
 header nav ul li {
   list-style: none;
   display: inline;
@@ -36,18 +41,30 @@ header .web-icon {
   top: -10px;
 }
 
-header .sign-in-button {
+header .sign-up-button {
   color: var(--main-color);
   background: var(--tertiary-color);
   border-radius: var(--radius);
   border: 1px solid var(--tertiary-color);
 }
+
+header .sign-up-button:hover {
+  border: 1px solid var(--main-color);
+  transition: all 150ms ease-in-out;
+}
+
 header .log-in-button {
   background: var(--main-color);
   color: var(--tertiary-color);
   border-radius: var(--radius);
   border: 1px solid var(--main-color);
 }
+header .log-in-button:hover {
+  color: var(--main-color);
+  background: var(--tertiary-color);
+  transition: all 150ms ease-in-out;
+}
+
 .sub-heading {
   margin: 150px 0;
   font-weight: var(--main-color);
@@ -182,9 +199,47 @@ h1 {
 }
 
 .contact-details {
-  margin: 200px 0 400px 100px;
+  margin: 200px 0 200px 100px;
 }
 
 .footer ul li {
   list-style-type: none;
+}
+
+.popup {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: var(--tertiary-color);
+  width: 400px;
+  height: 500px;
+  border-radius: var(--radius);
+  position: relative;
+}
+
+.popup .form-group {
+  padding: 10px;
+}
+.popup .submit-button {
+  padding: 15px 0;
+}
+
+.popup .close-icon {
+  font-size: 40px;
+  position: relative;
+  right: -345px;
+  top: -9px;
+}
+.popup .close-icon:hover {
+  border: 1px solid var(--main-color);
+  border-radius: var(--radius);
+  color: var(--main-color);
 }

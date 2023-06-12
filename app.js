@@ -1,5 +1,25 @@
+const logIn = document.getElementById("user-log-in-button");
+logIn.addEventListener("click", () => {
+  document.getElementById("poped-up-content-log-in").style.display = "flex";
+});
+
+const signUp = document.getElementById("user-sign-up-button");
+signUp.addEventListener("click", () => {
+  document.getElementById("poped-up-content-sign-up").style.display = "flex";
+});
+
+const removeLogIn = document.getElementById("log-in-closing-icon");
+removeLogIn.addEventListener("click", () => {
+  document.getElementById("poped-up-content-log-in").style.display = "none";
+});
+
+const removeSignUp = document.getElementById("sign-up-closing-icon");
+removeSignUp.addEventListener("click", () => {
+  document.getElementById("poped-up-content-sign-up").style.display = "none";
+});
+
 const modelOne = document.getElementById("bmw");
-modelOne.addEventListener("click", function () {
+modelOne.addEventListener("click", () => {
   let model = document.getElementById("image");
   model.src = "car-1.jpg";
   let amount = document.getElementById("amount");
@@ -15,7 +35,7 @@ modelOne.addEventListener("click", function () {
 });
 
 const modelTwo = document.getElementById("toyota-fortuner");
-modelTwo.addEventListener("click", function () {
+modelTwo.addEventListener("click", () => {
   let model = document.getElementById("image");
   model.src = "car-2.jpg";
   let amount = document.getElementById("amount");
@@ -31,7 +51,7 @@ modelTwo.addEventListener("click", function () {
 });
 
 const modelThree = document.getElementById("ford");
-modelThree.addEventListener("click", function () {
+modelThree.addEventListener("click", () => {
   let model = document.getElementById("image");
   model.src = "car-3.jpg";
   let amount = document.getElementById("amount");
@@ -47,7 +67,7 @@ modelThree.addEventListener("click", function () {
 });
 
 const modelFour = document.getElementById("hyndai");
-modelFour.addEventListener("click", function () {
+modelFour.addEventListener("click", () => {
   let model = document.getElementById("image");
   model.src = "car-4.jpg";
   let amount = document.getElementById("amount");
@@ -63,7 +83,7 @@ modelFour.addEventListener("click", function () {
 });
 
 const modelFive = document.getElementById("volkswagen-polo");
-modelFive.addEventListener("click", function () {
+modelFive.addEventListener("click", () => {
   let model = document.getElementById("image");
   model.src = "car-5.jpg";
   let amount = document.getElementById("amount");
