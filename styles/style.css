@@ -12,6 +12,10 @@ body {
   font-weight: var(--main-font-weight);
 }
 
+p {
+  opacity: 0.7;
+}
+
 header nav a {
   text-decoration: none;
   color: var(--primary-color);
@@ -124,7 +128,7 @@ h1 {
 
 .sub-content {
   margin: 100px 0 0 0;
-  padding: 30px 0;
+  padding: 15px 0;
   color: var(--tertiary-color);
   background: rgb(32, 32, 124);
 }
@@ -171,8 +175,13 @@ h1 {
   font-size: 14px;
 }
 
+.accordion-body {
+  opacity: 0.7;
+  font-size: 12px;
+}
+
 .frequently-asked-questions .accordion-button {
-  padding: 35px;
+  padding: 20px;
   font-size: 20px;
   font-weight: var(--main-font);
 }
@@ -215,6 +224,10 @@ h1 {
 .footer-email {
   margin-top: 10px;
   border-radius: var(--radius);
+}
+.footer {
+  font-size: 8px;
+  margin-bottom: 20px;
 }
 
 .popup {
