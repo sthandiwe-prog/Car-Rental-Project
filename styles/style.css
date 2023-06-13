@@ -276,8 +276,8 @@ h1 {
   }
 
   header .web-icon {
-    font-size: 17px;
-    top: 1px;
+    font-size: 16px;
+    top: 3px;
   }
 
   header .sign-up-button {
@@ -360,7 +360,8 @@ h1 {
   }
 
   .testimonials .card {
-    margin: 10px 0 10px 75px;
+    margin: 10px 0;
+    text-align: center;
   }
 
   .frequently-asked-questions .sub-heading {
