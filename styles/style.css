@@ -34,6 +34,8 @@ header nav ul li {
 
 header .navigation {
   padding: 30px 5px;
+  display: flex;
+  justify-content: space-between;
 }
 
 header .nav-icon-car {
@@ -272,35 +274,39 @@ h1 {
   header nav a {
     font-weight: var(--main-font-weight);
     font-size: 10px;
-    text-align: center;
   }
-  header nav ul li {
-    margin: 0 3px;
-  }
-
   header nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0 12px 0 0;
+    padding: 28px 0 0 0;
   }
-
-  header nav ul .vehicle {
+  header nav ul li:nth-child(3) {
+    margin: 0;
+  }
+  header nav ul,
+  span:nth-child(3) {
+    display: flex;
+    justify-content: center;
+  }
+  header .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header .vehicle {
     display: none;
   }
-
   header .web-icon {
-    font-size: 16px;
-    top: 3px;
+    display: none;
   }
 
   header .sign-up-button {
     font-size: 10px;
-    margin: 0;
+    margin: 30px 0;
   }
 
   header .log-in-button {
     font-size: 10px;
     margin-left: 4px;
+    margin: 30px 0;
   }
 
   .landing-content {
